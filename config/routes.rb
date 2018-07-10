@@ -4,8 +4,6 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users
       resources :scores
-      # get '/users', to: 'users#index'
-      # get '/scores', to: 'scores#index'
     end
   end
 end

@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(username: "test")
+Score.create(user_id: 1, point_value: "2000")

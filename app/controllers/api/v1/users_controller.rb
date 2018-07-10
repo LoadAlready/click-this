@@ -8,4 +8,10 @@ class Api::V1::UsersController < ApplicationController
     @user = User.find(params[:id])
     render json: @user
   end
+
+  def create
+    @user = User.new(username: params[:username])
+    @user.save
+    render json: @user
+  end
 end
