@@ -10,7 +10,7 @@ class Api::V1::ScoresController < ApplicationController
   end
 
   def create
-    @score = Score.new(point_value: params[:point_value], user_id: params[:user_id])
+    @score = Score.new(point_value: params[:point_value], username: params[:username])
     @score.save
     render json: @score
   end
