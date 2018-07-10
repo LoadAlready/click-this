@@ -5,6 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-User.create(username: "test")
-Score.create(user_id: 1, point_value: "2000")
+Score.create(point_value: "2000", username: "xyz")
